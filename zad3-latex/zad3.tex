@@ -1,0 +1,117 @@
+\documentclass{article}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{wrapfig}
+\usepackage[hidelinks]{hyperref}
+
+
+\title{\LaTeX}
+\author{Julia Bisewska}
+
+\begin{document}
+\maketitle
+\newpage
+\begin{abstract}
+    To jest streszczenie pracy.
+\end{abstract}
+
+\tableofcontents
+
+\newpage
+
+\section{\underline{Mikrotomografia}\cite{mikrotomografia}}
+Mikrotomografia rentgenowska (mikrotomografia komputerowa, computed microtomography, CMT) - nieinwazyjna metoda badawcza, pozwalająca odwzorować strukturę wewnętrzną badanego obiektu na podstawie zarejestrowanych pod różnymi kątami jego dwuwymiarowych projekcji. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics{mikrotomografia.jpg}
+\caption{Rentgenowska mikrotomografia komputerowa}
+\label{fig:rysunek1}
+\end{figure}
+
+\subsection{Rozdzielczość}
+
+\begin{wrapfigure}{r}{0.15\textwidth}
+\includegraphics[scale=0.5]{mikro-komputerowa.jpg}
+\label{fig:rysunek2}
+\end{wrapfigure}
+\begin{table}[h]
+\begin{center}
+\caption{Mikrotomografy dzieli się na dwie kategorie}
+\begin{tabular}{ |c|c| }
+\hline
+ \textbf{mikrotomograf} & urządzenie o zdolności rozdzielczej rzędu 1 mikrometrów  \\ \hline
+ \textbf{nanotomograf} & urządzenie o zdolności rozdzielczej poniżej 1 mikrometra \\
+\hline
+\end{tabular}
+\label{tab:tabela1}
+\end{center}
+\end{table}
+
+
+\subsection{Zasada działania}
+Aby otrzymać obraz wewnętrznej struktury polimeru w wyniku pomiaru mikrotomograficznego, konieczne jest wykonanie następujących kroków:
+
+\begin{enumerate}
+	\item pomiaru - polegającego na rejestracji dwuwymiarowych projekcji rentgenowskich obiektu przy jego obrocie o co najmniej 180 stopni
+	\item rekonstrukcji - procesu odwzorowania wnętrza próbki jako superpozycji zarejestrowanych projekcji dwuwymiarowych. Jest to proces matematyczny oparty na prawie Lamberta-Beera dla materiałów złożonych
+\end{enumerate}
+
+Rozdzielczość pomiaru i rozdzielczość rekonstrukcji nie muszą być równe. Rozdzielczość pomiaru zależy od odległości działo-próbka i próbka-detektor, rozmiaru plamki rentgenowskiej oraz rozmiaru piksela detektora. Rozdzielczość rekonstrukcji zależy od ilości pikseli każdej projekcji użytej do uzyskania jednego woksela obrazu zrekonstruowanego. Rozdzielczość zadana w procesie rekonstrukcji może być zarówno niższa, jak i wyższa od rozdzielczości pomiaru, jednak w tym drugim przypadku powoduje ona tylko większe obciążenie komputera.
+
+\subsection{Zastosowania}
+
+\begin{itemize}
+	\item \textit{\textbf{Medycyna}} - obrazowanie tkanek i organów
+	\item \textit{\textbf{Biologia}} - obrazowanie małych zwierząt
+	\item \textit{\textbf{Inżynieria materiałowa}} - obrazowanie i analiza implantów, pianek metalicznych
+	\item \textit{\textbf{Geologia}} - analiza porowatości i budowy fazowej skał
+	\item \textit{\textbf{Przemysł spożywczy}} - analiza produktów żywnościowych
+	\item \textit{\textbf{Przemysł polimerowy}} - obrazowanie struktury wewnętrznej bloków polimerowych
+\end{itemize}
+
+\newpage
+\section{\underline{Fizyka}}
+
+\subsection{Przyspieszenie ziemskie}\cite{przyspieszenie_ziemskie}
+ Przyspieszenie grawitacyjne ciał swobodnie spadających na Ziemię, bez oporów ruchu. 
+\begin{center}
+$\frac{N}{kg}=\frac{m}{s^2}$
+\end{center}
+
+\subsection{Zmienność przyspieszenia ziemskiego}
+
+Wartość przyspieszenia ziemskiego zależy od szerokości geograficznej oraz wysokości nad poziomem morza. Wraz z wysokością przyspieszenie maleje odwrotnie proporcjonalnie do kwadratu odległości do środka Ziemi i jest wynikiem zmniejszania się siły grawitacji zgodnie z prawem powszechnego ciążenia. Zmniejszanie się przyspieszenia ziemskiego wraz ze zmniejszaniem szerokości geograficznej jest spowodowane działaniem pozornej siły odśrodkowej, która powstaje na skutek ruchu obrotowego Ziemi. Ponieważ siła ta jest proporcjonalna do odległości od osi obrotu, stąd największą wartość osiąga na równiku. Ponieważ siła odśrodkowa ma tu zwrot przeciwny do siły grawitacji, przyspieszenie ziemskie na równiku osiąga najmniejszą wartość. Dodatkowe zmniejszenie przyspieszenia ziemskiego w okolicach równika spowodowane jest spłaszczeniem Ziemi (większą odległością od środka Ziemi).
+
+Nie obserwuje się zależności przyspieszenia ziemskiego od długości geograficznej.
+
+Przybliżoną zależność przyspieszenia ziemskiego, z uwzględnieniem podanych efektów, podaje wzór: 
+
+$ $
+
+\begin{center}
+$ g_{\varphi } \approx 9,78 (1+ 0,01 \sin^2 \varphi - 0,000006 \sin^2 2\varphi) -3*10^{-6}h$
+\end{center}
+
+$\varphi$ - szerokość geograficzna
+
+$h$ - wysokość nad poziomem morza
+
+$ $
+
+\subsection{Anomalie grawitacyjne}
+Poza ruchem obrotowym Ziemi i jej niesferycznym elipsoidalnym kształtem, również inne czynniki powodują zróżnicowanie przyspieszenia ziemskiego. Dokładne jego pomiary wykazują wahania wartości, w zależności od położenia. Jest to spowodowane między innymi różnicami w rzeźbie terenu, gęstości skał podłoża i rozkładzie tej gęstości w skorupie ziemskiej. Pewną zmienność przyspieszenia grawitacyjnego w czasie powoduje oddziaływanie innych ciał Układu Słonecznego, przede wszystkim Księżyca i Słońca.
+
+\newpage
+\section{Podsumowanie}
+    Odniesienie się do rysunków i tabel: Rysunek \ref{fig:rysunek1}, Rysunek \ref{fig:rysunek2},  Tabela \ref{tab:tabela1}.
+
+\newpage
+
+\bibliographystyle{plain}
+\bibliography{data}
+
+\end{document}
+
